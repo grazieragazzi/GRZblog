@@ -1,2 +1,2 @@
 # GRZblog
-Lets learn new things
+Lets learn new things!
