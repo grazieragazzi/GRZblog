@@ -1,0 +1,64 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Test",
+      "description": "Test"
+    },
+    "host": "example.com",
+    "schemes": [
+      "https"
+    ],
+    "basePath": "/v1",
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/items": {
+        "get": {
+          "summary": "Test",
+          "description": "Test",
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "$ref": "#/definitions/Items"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Items": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Item"
+            }
+          }
+        }
+      },
+      "Item": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      }
+    }
+  }
