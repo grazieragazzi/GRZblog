@@ -5,9 +5,9 @@
       "title": "Test",
       "description": "test",
       "contact": {
-        "name": "javascript:alert(2)",
+        "name": "test",
         "url": "javascript:alert(document.domain)",
-        "email": "javascript:alert(1)"
+        "email": "test@test.com"
       }
     },
     "host": "example.com",
