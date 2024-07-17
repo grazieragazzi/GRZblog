@@ -3,7 +3,7 @@
     "info": {
       "version": "1.0.0",
       "title": "Test",
-      "description": "Test"
+      "description": "<script>alert(document.domain)</script>"
     },
     "host": "example.com",
     "schemes": [
